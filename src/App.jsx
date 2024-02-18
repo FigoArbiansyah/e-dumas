@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 // screens
 import PUBLIC_SCREENS from './helpers/screens';
+import NotAvailableScreen from './screens/NotAvailableScreen.jsx';
 
 function App() {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)',
+  });
+
+  if (isDesktopOrLaptop) {
+    return <NotAvailableScreen />;
+  }
+
   return (
     <>
       <BrowserRouter>

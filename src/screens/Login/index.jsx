@@ -53,10 +53,10 @@ const Login = () => {
             <div className='p-5'>
               <div
                 className="mb-5 text-center"
-                onClick={() => navigate('/')}
               >
                 <img
                   src={MegaphoneOnlyImage}
+                  onClick={() => navigate('/')}
                   alt="Megaphone"
                   style={{
                     width: 180,
