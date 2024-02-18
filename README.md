@@ -1,8 +1,7 @@
-# React + Vite
+17-Feb-2024
+# E-DUMAS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikasi Pengaduan Masyarakat
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+production url: https://dev-e-dumas.vercel.app/
+development url: https://dev-e-dumas-git-development-figoarbiansyah.vercel.app/
