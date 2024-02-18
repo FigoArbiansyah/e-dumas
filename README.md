@@ -3,5 +3,4 @@
 
 Aplikasi Pengaduan Masyarakat
 
-production url: https://dev-e-dumas.vercel.app/
-development url: https://dev-e-dumas-git-development-figoarbiansyah.vercel.app/
+production url: https://edumasapp.vercel.app/
