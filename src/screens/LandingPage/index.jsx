@@ -1,9 +1,12 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
-import CommunityImage from '../../assets/images/community.png';
+// import CommunityImage from '../../assets/images/community.png';
 import MegaphoneImage from '../../assets/images/megaphone.png';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
+
   const title = 'E-DUMAS';
   const desc_1 = 'bisa digunakan untuk anda yang punya keluhan dan ingin melaporkannya ke RT setempat.';
   return (
@@ -12,7 +15,9 @@ const LandingPage = () => {
         <div className="flex justify-end">
           <Button
             variant="contained"
-            color='inherit' className='font-poppins'
+            color='inherit'
+            onClick={() => navigate('/login')}
+            className='font-poppins'
             style={{
               fontWeight: 500,
               fontFamily: 'Poppins, sans-serif',

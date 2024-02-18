@@ -18,6 +18,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    "react-refresh/only-export-components": 0,
     "import/extensions": [
       "error",
       "never",
