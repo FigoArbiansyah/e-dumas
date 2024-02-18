@@ -21,7 +21,9 @@ const ValidationSchema = Yup.object().shape({
 
 const Login = () => {
   const navigate = useNavigate();
-  const handleLogin = async () => {};
+  const handleLogin = async () => {
+    navigate('/dashboard');
+  };
   const [initialValues, setInitialValues] = useState(INITIAL_VALUES);
 
   return (

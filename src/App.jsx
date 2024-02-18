@@ -28,7 +28,6 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route key={'NotFound'} path={'*'} element={<NotFound />} />
           {/* Public Screens */}
           {Object.keys(PUBLIC_SCREENS)?.map((key) => {
             const ELEMENT = PUBLIC_SCREENS?.[key].element;
@@ -58,6 +57,8 @@ function App() {
               <Route key={key} path={path} element={<ELEMENT />} />
             );
           })}
+
+          <Route path={'*'} element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
